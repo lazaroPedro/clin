@@ -1,4 +1,36 @@
 *{
   margin: 0;
   padding: 0;
+
+  /* Paleta de Cores*/
+  --corPrincipal: #1A80B8;
+  --corAnalogaClara: #003461;
+  --corAnalogaEscura: #003461;
+}
+header{
+  height: 80px;
+  width: 100%;
+  background-color: var(--corPrincipal);
+  display: flex;
+  justify-content: center;
+  
+}
+#headerContainer{
+  width: 80%;
+  display: flex;
+}
+.headerLogo{
+  background-color: #fff;
+  padding-left: 10px;
+  padding-right: 7px;
+}
+
+.headerMedia{
+  display: flex;
+
+}
+.mediaItem{
+  height: 30px;
+  width: 30px;
+  background-color: var(--corAnalogaClara);
 }
