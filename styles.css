@@ -3,6 +3,8 @@
   padding: 0;
 
   /* Paleta de Cores*/
+  --corBranca: #fff;
+  --corPreta: #000;
   --corPrincipal: #1A80B8;
   --corAnalogaClara: #003461;
   --corAnalogaEscura: #003461;
@@ -10,27 +12,52 @@
 header{
   height: 80px;
   width: 100%;
-  background-color: var(--corPrincipal);
+  background-color: var(--corBranca);
   display: flex;
   justify-content: center;
+  box-shadow: 0 5px 5px var(--corAnalogaClara);
   
+  
+}
+.headerLogo{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+.logoImg{
+  height: 75px;
+  padding: 15px 15px;
 }
 #headerContainer{
   width: 80%;
   display: flex;
-}
-.headerLogo{
-  background-color: #fff;
-  padding-left: 10px;
-  padding-right: 7px;
+  justify-content: space-between;
 }
 
 .headerMedia{
   display: flex;
-
+  align-items: center;
+  justify-content: center;
 }
-.mediaItem{
-  height: 30px;
-  width: 30px;
-  background-color: var(--corAnalogaClara);
+.headerMedia ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.mediaItem a{
+  height: 45px;
+  width: 45px;
+  display: flex;
+  margin: 0 7.5px;
+  align-items: center;
+  justify-content: center;
+  color: var(--corBranca);
+  background-color: var(--corPrincipal);
+  border-radius: 10px;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0 0 5px var(--corAnalogaClara);
 }
