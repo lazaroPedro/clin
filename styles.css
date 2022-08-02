@@ -15,7 +15,7 @@ header{
   background-color: var(--corBranca);
   display: flex;
   justify-content: center;
-  box-shadow: 0 5px 10px var(--corAnalogaClara);
+  box-shadow: 0 5px 10px var(--corPreta);
   
   
 }
@@ -27,7 +27,7 @@ header{
   height: 80px;
 }
 .logoImg{
-  height: 75px;
+  height: 70px;
   padding: 15px 15px;
 }
 #headerContainer{
@@ -48,8 +48,8 @@ header{
 }
 
 .mediaItem a{
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   display: flex;
   margin: 0 7.5px;
   align-items: center;
