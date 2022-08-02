@@ -15,7 +15,7 @@ header{
   background-color: var(--corBranca);
   display: flex;
   justify-content: center;
-  box-shadow: 0 5px 5px var(--corAnalogaClara);
+  box-shadow: 0 5px 10px var(--corAnalogaClara);
   
   
 }
