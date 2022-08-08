@@ -6,7 +6,7 @@
   /* Paleta de Cores*/
   --corBranca: #F2F2F2;
   --corPreta: #000;
-  --corPrincipal: #1A80B8;
+  --corPrincipal: #00AFAD;
   --corAnalogaClara: #00AFAD;
   --corAnalogaEscura: #003461;
   --corContrastanteClara: #FCAF17;
@@ -20,7 +20,7 @@ header{
   background-color: var(--corBranca);
   display: flex;
   justify-content: center;
-  box-shadow: 0 5px 10px #00000050;
+  box-shadow: 0 8px 10px #00000050;
   position: fixed;
   top: 0;
   
@@ -95,7 +95,7 @@ main{
 .mainAgendamento{
   display: flex;
   flex-direction: row;
-  background-color: var(--corBranca);
+  background-color: var(--corPrincipal);
   width: 100%;
 
 }
@@ -112,6 +112,11 @@ main{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: -5px -5px 10px #00000050;
+
+  
+
+  
 }
 
 .ctaText h1{
@@ -130,10 +135,10 @@ main{
   border-radius: 15px;
   font-size: 24px;
   
-  background-color: var(--corContrastanteClara);
+  background-color: var(--corPrincipal);
   text-decoration: none;
   color: var(--corBranca);
-  border: 3px solid var(--corContrastanteEscura);
+  border: 3px solid var(--corBranca);
   font-weight: 800;
   box-shadow: 0 0 5px var(--corAnalogaClara);
 }
