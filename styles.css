@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 
   /* Paleta de Cores*/
-  --corBranca: #F2F2F2;
+  --corBranca: #Fff;
+  --corBr: #f2f2f2;
   --corPreta: #000;
   --corPrincipal: #00AFAD;
   --corAnalogaClara: #00AFAD;
@@ -20,9 +25,10 @@ header{
   background-color: var(--corBranca);
   display: flex;
   justify-content: center;
-  box-shadow: 0 8px 10px #00000050;
+  box-shadow: 0 5px 5px #00346150;
   position: fixed;
   top: 0;
+  border-bottom: 3px solid var(--corPrincipal);
   
   
 }
@@ -95,7 +101,7 @@ main{
 .mainAgendamento{
   display: flex;
   flex-direction: row;
-  background-color: var(--corPrincipal);
+  background-color: var(--corBranca);
   width: 100%;
 
 }
@@ -113,6 +119,7 @@ main{
   align-items: center;
   justify-content: center;
   box-shadow: -5px -5px 10px #00000050;
+  font-family: 'Bebas Neue'; 
 
   
 
@@ -120,7 +127,8 @@ main{
 }
 
 .ctaText h1{
-  font-size: 2.8rem;
+  font-size: 3rem;
+  font-family: 'Bebas Neue'; 
 }
 .ctaText span{
   font-size: 2rem;
@@ -138,9 +146,9 @@ main{
   background-color: var(--corPrincipal);
   text-decoration: none;
   color: var(--corBranca);
-  border: 3px solid var(--corBranca);
+  border: 2px solid var(--corBranca);
   font-weight: 800;
-  box-shadow: 0 0 5px var(--corAnalogaClara);
+  box-shadow: 0 0 5px var(--corContrastanteClara);
 }
 .ctaButton i{
   color: green;
