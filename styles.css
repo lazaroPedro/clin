@@ -25,10 +25,9 @@ header{
   width: 100%;
   background-color: var(--corBr);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   box-shadow: 0 5px 5px #00346150;
-  position: fixed;
-  top: 0;
+
   border-bottom: 3px solid var(--corPrincipal);
   
   
@@ -38,18 +37,40 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: 8hv;
 }
 .logoImg{
-  height: 80px;
+  
   padding: 0 15px;
 }
-#headerContainer{
-  width: 80%;
+
+.navHeader> ul, .navHeader{
+  list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+
+}
+.navItem a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  
+  background: var(--corPrincipal);
+  margin-left: 10px;
+  color: #fff;
+  
+  
+  
+}
+.active{
+  background-color: #000;
 }
 
+
+/*
 .headerMedia{
   display: flex;
   align-items: center;
@@ -86,27 +107,26 @@ header{
   background-color: #1A80B880 ;
   
 }
-
+*/
 
 /*             MAIN CSS               */
+body{
+  height: 300vh;
+}
 
 main{
-  margin-top: 80px;
-  display: block;
+  
+  height: 92vh;
+  background: url('https://img.freepik.com/free-photo/doctor-holding-dentist-s-tools_144627-43914.jpg?w=996&t=st=1660691033~exp=1660691633~hmac=54a612c42221eff4334722881b6d4ff62b703168924a9b409e8bdd1d5a2e1dfb') no-repeat ;
 
  
 }
 
-.mainImg{
-  object-fit: cover;
-  height: 400px;
-  
-  width: 400px;
-}
+
 .mainAgendamento{
   display: flex;
 
-  background-color: var(--corBranca);
+  
   width: 100%;
 
 }
