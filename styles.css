@@ -18,16 +18,16 @@
   --corContrastanteClara: #FCAF17;
   --corContrastanteEscura: #F26522;
   --cor3: #048ABF;
-
 }
 header{
-  height: 100px;
+  height: 15vh;
   width: 100%;
-  background-color: var(--corBr);
+  background-color: var(--corBranca);
   display: flex;
   justify-content: space-around;
   box-shadow: 0 5px 5px #00346150;
-
+  position: fixed;
+  top: 0;
   border-bottom: 3px solid var(--corPrincipal);
   
   
@@ -41,7 +41,7 @@ header{
 }
 .logoImg{
   
-  padding: 0 15px;
+  padding:2vh;
 }
 
 .navHeader> ul, .navHeader{
@@ -50,23 +50,33 @@ header{
   align-items: center;
 
 }
-.navItem a{
+.navItem{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-decoration: none;
   padding: 10px 15px;
+  height: 15vh;
   text-transform: uppercase;
+  font-size: 18px;
+  color: var(--corAnalogaEscura);
   
-  background: var(--corPrincipal);
-  margin-left: 10px;
-  color: #fff;
+  
+  
   
   
   
 }
+.navItem:hover:not(.active){
+  transform: translateY(5px);
+}
 .active{
-  background-color: #000;
+  background-color: var(--corPrincipal);
+  color: #fff;
+  height: 16vh;
+  border-radius: 0 0 15px 15px; 
+  padding: 0 20px;
+  box-shadow: 0 5px 5px #00000050;
 }
 
 
@@ -111,13 +121,18 @@ header{
 
 /*             MAIN CSS               */
 body{
+
   height: 300vh;
 }
 
 main{
+  margin-top: 12vh;
+  height: 60vh;
+  background: url('https://stackblitz.com/files/web-platform-19jbmw/github/lazaroPedro/clin/main/doctor-holding-dentist-s-tools.jpg') no-repeat;
+  filter: blur(0.2);
   
-  height: 92vh;
-  background: url('https://img.freepik.com/free-photo/doctor-holding-dentist-s-tools_144627-43914.jpg?w=996&t=st=1660691033~exp=1660691633~hmac=54a612c42221eff4334722881b6d4ff62b703168924a9b409e8bdd1d5a2e1dfb') no-repeat ;
+  background-position: top left;
+
 
  
 }
@@ -152,14 +167,14 @@ main{
   
 }
 
-.ctaText h1{
+ h1{
   text-align: center;
   font-size: 4rem;
   font-family: "Bebas Neue";
   letter-spacing: 5px;
   font-weight: 400;
 }
-.ctaText span{
+ span{
 
   font-size: 2.5rem;
   letter-spacing: normal;
