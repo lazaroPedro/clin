@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 
   /* Paleta de Cores*/
   --corBranca: #Fff;
@@ -18,6 +21,7 @@
   --corContrastanteClara: #FCAF17;
   --corContrastanteEscura: #F26522;
   --cor3: #048ABF;
+
 }
 header{
   height: 15vh;
@@ -28,7 +32,8 @@ header{
   box-shadow: 0 5px 5px #00346150;
   position: fixed;
   top: 0;
-  border-bottom: 3px solid var(--corPrincipal);
+  border-bottom: 5px solid var(--corPrincipal);
+  
   
   
 }
@@ -60,22 +65,29 @@ header{
   text-transform: uppercase;
   font-size: 18px;
   color: var(--corAnalogaEscura);
+  transition: 0.5s;
   
   
   
   
   
   
-}
+}/*
 .navItem:hover:not(.active){
-  transform: translateY(5px);
-}
+  background-color: var(--corPrincipal);
+  color: #fff;
+  border-radius: 0 0 15px 15px; 
+
+  box-shadow: 0 5px 5px #00000050;
+
+}*/
+
 .active{
   background-color: var(--corPrincipal);
   color: #fff;
   height: 16vh;
   border-radius: 0 0 15px 15px; 
-  padding: 0 20px;
+  
   box-shadow: 0 5px 5px #00000050;
 }
 
@@ -126,14 +138,8 @@ body{
 }
 
 main{
-  margin-top: 12vh;
-  height: 60vh;
-  background: url('https://stackblitz.com/files/web-platform-19jbmw/github/lazaroPedro/clin/main/doctor-holding-dentist-s-tools.jpg') no-repeat;
-  filter: blur(0.2);
+  margin-top: 15vh;
   
-  background-position: top left;
-
-
  
 }
 
@@ -141,18 +147,24 @@ main{
 .mainAgendamento{
   display: flex;
 
-  
   width: 100%;
-
+  height: 80vh;
+  
 }
 .ctaImg{
-  width: auto;
+
+  height: 80vh;
+
+  
+
+  
 }
 
 
 .ctaText {
-  width: 100%;
   
+  height: 100%;
+  width: 100%;
   color: var(--corAnalogaEscura);
   display: flex;
   flex-direction: column;
@@ -160,6 +172,7 @@ main{
   justify-content: center;
   
   
+  
 
 
   
@@ -167,18 +180,22 @@ main{
   
 }
 
- h1{
+ .ctaText h1{
   text-align: center;
-  font-size: 4rem;
-  font-family: "Bebas Neue";
-  letter-spacing: 5px;
-  font-weight: 400;
+  font-size: 3.5rem;
+  font-family: 'Aboreto';
+  font-weight: 600;
+  text-transform: uppercase;
+  max-width: 40vw;
 }
- span{
-
-  font-size: 2.5rem;
-  letter-spacing: normal;
-
+ .ctaText h2{
+  margin-top: 5vh;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  max-width: 40vw;
+  
+  
   
 }
 .ctaButton{
@@ -196,7 +213,7 @@ main{
   border: 2px solid var(--corBranca);
   font-weight: 800;
   box-shadow: 0 0 5px var(--corContrastanteClara);
-  margin-top: 50px;
+  margin-top: 5vh;
 
 }
 
