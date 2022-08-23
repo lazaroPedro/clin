@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-    <script src="https://kit.fontawesome.com/15900161c7.js" crossorigin="anonymous"></script>
-    
 
-  </head>
-  <body>
-    <header>
-    
-      <a href="/">
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
+  <script src="https://kit.fontawesome.com/15900161c7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+
+    <a href="/">
       <img class="logoImg" src="https://stackblitz.com/files/web-platform-19jbmw/github/lazaroPedro/clin/main/sorrir-mais-logo.png" alt="Logo" />
-      </a>
-      
-      <!--Home, Quem Somos, Clinica, Contato
-      <div class="headerMedia">
+    </a>
+    <nav class="navHeader">
       <ul>
-        <li class="mediaItem"><a href=""><i class="fa-brands fa-whatsapp" target="_blank"></i></a></li>
-        <li class="mediaItem"><a href=""><i class="fa-brands fa-instagram" target="_blank"></i></a></li>
-        <li class="mediaItem"><a href=""><i class="fa-brands fa-facebook-f" target="_blank"></i></a></li>
-        <li class="mediaItem"><a href=""><i class="fa-solid fa-envelope" target="_blank"></i></a></li>
+        <li><a href="/" title="este é " class="navItem active">Inicio</a></li>
+        <li><a href="#about-us" class="navItem">Quem Somos</a></li>
+        <li><a href="" class="navItem">Clinica</a></li>
+        <li><a href="" class="navItem">Tratamento</a></li>
+        <li><a href="" class="navItem">Contato</a></li>
       </ul>
-      </div>-->
-      <nav class="navHeader">
-        <ul>
-          <li><a href="/"  title="este é " class="navItem active">Inicio</a></li>
-          <li><a href="#about-us" class="navItem" >Quem Somos</a></li>
-          <li><a href="" class="navItem">Clinica</a></li>
-          <li><a href="" class="navItem">Tratamento</a></li>
-          <li><a href="" class="navItem">Contato</a></li>
-        </ul>
-      </nav>
-
-      
-    </header>
-    <main>
-      <section  id="home" class="mainAgendamento">
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="mainAgendamento">
       <div class="ctaText">
-        <h1>Conquiste o sorriso dos seus sonhos!</h1> 
-        <h2><strong> Agende já sua consulta</strong>, nossos profissionais estão prontos para te atender <strong>agora mesmo</strong></h2>
+        <h1>Conquiste o sorriso dos seus sonhos!</h1>
+        <h2><strong> Agende já sua consulta</strong>, nossos profissionais estão prontos para te atender
+          <strong>agora mesmo</strong></h2>
         <a class="ctaButton" href="">Agendar</a>
       </div>
       <img class="ctaImg" src="https://stackblitz.com/files/web-platform-19jbmw/github/lazaroPedro/clin/main/dentist-with-smile.jpg" alt="">
-          
-      </section>
-      <section>
+
+    </section>
+    <section class="service">
+      <h2>Conheca nossos serviços</h2>
+      <dl>
+        <div class="serviceItem">
+        <dt>Ortodontia</dt>
+        <img src="https://img.freepik.com/free-photo/dentist-examining-female-patient-teeth_107420-65309.jpg?w=740&t=st=1661217124~exp=1661217724~hmac=864da7a1fda29d03b49d3cb6db1aa382031e82d3620dc6a4df546e3cb527b088" alt="">
+        <dd>Por meio do uso de aparelhos dentários, os pacientes de todas as idades podem corrigir o posicionamento dos dentes e ossos faciais</dd></div>
+        <div class="serviceItem">
+        <dt>Implantodontia</dt>
+        <dd>O tratamento com implante é indicado para substituir dentes faltantes na boca de forma muito eficiente</dd></div>
+        <div class="serviceItem">
+        <dt>Dentística</dt>
+        <dd>Também conhecida como odontologia estética, a dentística é a área responsável por proporcionar ao paciente um sorriso mais harmonioso, com dentes brancos e alinhados.</dd></div>
+        <div class="serviceItem">
+        <dt>Odontopediatria</dt>
+        <dd>A periodontia é a área responsável pela prevenção e pelo tratamento de tecidos e estruturas de sustentação dos dentes, ou seja, a gengiva e o osso.</dd></div>
         
+      </dl>
       <!--  <h1>Diferenciais da nossa clínica</h1>
         
           <dl>
@@ -60,17 +65,20 @@
             <dt>Localização</dt>
 
           </dl>-->
-          
-        
-      </section>
-      
-      </section>
-      <div id="about-us">
-        <p>Lorem ipsulm dolor sit amet rem adipisci delectus? consectetur adipisicing elit. Ipsam cum, voluptate vero, blanditiis voluptatum aut consectetur et in quam rem adipisci delectus enim quod a laudantium perferendis ad possimus culpa
-        </p>
-      </div>
-    </main>
-  </body>
+
+
+
+
+    </section>
+  </main>
+</body>
+
 </html>
 
-<!-- <a href="https://www.freepik.com/photos/dental-teeth">Dental teeth photo created by Racool_studio - www.freepik.com</a> -->
+<!-- <a href="https://www.freepik.com/photos/oral">Oral photo created by Racool_studio - www.freepik.com</a> 
+     <a href='https://www.freepik.com/photos/orthodontist'>Orthodontist photo created by wavebreakmedia_micro - www.freepik.com</a>
+     <a href='https://www.freepik.com/photos/dental-smile'>Dental smile photo created by wavebreakmedia_micro - www.freepik.com</a>
+     <a href='https://www.freepik.com/photos/dental-doctor'>Dental doctor photo created by ArthurHidden - www.freepik.com</a>
+     <a href='https://www.freepik.com/photos/tartar'>Tartar photo created by wavebreakmedia_micro - www.freepik.com</a>
+     <a href='https://www.freepik.com/photos/pediatric-dentistry'>Pediatric dentistry photo created by ArthurHidden - www.freepik.com</a>
+    -->

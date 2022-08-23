@@ -1,25 +1,24 @@
 @charset 'UTF-8';
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
-:root{
+:root {
   --whiteColor: #f2f2f2;
-  --mainColor: #00AFAD;
+  --mainColor: #00afad;
   --darkColor: #003461;
-  
-
 }
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
-  
+  color: var(--darkColor);
 }
-  /* Paleta de Cores*/
+/* Paleta de Cores*/
 
-header{
+header {
   height: 15vh;
   width: 100%;
   background-color: #fff;
@@ -29,23 +28,19 @@ header{
   position: fixed;
   top: 0;
   border-bottom: 5px solid var(--mainColor);
-  
-  
-  
 }
 
-.logoImg{
+.logoImg {
   padding-top: 1vh;
   padding-bottom: 1vh;
 }
 
-.navHeader ul, .navHeader{
-  
+.navHeader ul,
+.navHeader {
   display: flex;
   align-items: center;
-
 }
-.navItem{
+.navItem {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,48 +50,37 @@ header{
   font-size: 18px;
   color: var(--darkColor);
   transition: 0.5s;
-
 }
-.navItem:hover:not(.active){
-  background-color: #00AFAD20;
+.navItem:hover:not(.active) {
+  background-color: #00afad20;
   box-shadow: 0 -5px 10px #00000050;
 }
-.active{
+.active {
   background-color: var(--mainColor);
   color: #fff;
   box-shadow: 0 -5px 10px #00000050;
 }
 
-
 /*             MAIN CSS               */
-body{
-
+body {
   height: 300vh;
 }
 
-main{
+main {
   margin-top: 15vh;
 }
 
-.mainAgendamento{
+.mainAgendamento {
   display: flex;
 
   width: 100%;
   height: 80vh;
-  
 }
-.ctaImg{
-
+.ctaImg {
   height: 80vh;
-
-  
-
-  
 }
-
 
 .ctaText {
-  
   height: 100%;
   width: 100%;
   color: var(--darkColor);
@@ -104,17 +88,9 @@ main{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
-  
-  
-
-
-  
-
-  
 }
 
- .ctaText h1{
+.ctaText h1 {
   text-align: center;
   font-size: 3.5rem;
   font-family: 'Aboreto', 'Times New Roman', Times, serif;
@@ -122,17 +98,14 @@ main{
   text-transform: uppercase;
   max-width: 40vw;
 }
- .ctaText h2{
+h2 {
   margin-top: 5vh;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 400;
   max-width: 40vw;
-  
-  
-  
 }
-.ctaButton{
+.ctaButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,7 +113,7 @@ main{
   width: 300px;
   border-radius: 15px;
   font-size: 1.5rem;
-  
+
   background-color: var(--mainColor);
   text-decoration: none;
   color: #fff;
@@ -148,11 +121,31 @@ main{
   font-weight: 800;
   box-shadow: 0 0 5px var(--darkColor);
   margin-top: 5vh;
-
 }
 
 /*     Beneficios     */
-#about-us{
-  margin-top: 100vh;
-  height: 100vh;
+.service{
+  background: var(--mainColor);
+}
+dl {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.serviceItem {
+  width: 23vw;
+  
+  border: 2px solid #f00;
+  text-align:justify;
+  background-color: #fff;
+}
+.serviceItem dt{
+ text-align: center;
+ font-size: 20px;
+
+}
+.serviceItem img{
+  display: block;
+  margin: auto;
+  width: 22vw;
 }
