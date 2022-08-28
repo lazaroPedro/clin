@@ -1,61 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/15900161c7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <title>Home</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="styles.css" />
-  <script type="module" src="script.js"></script>
-  <script src="https://kit.fontawesome.com/15900161c7.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <header>
+      <a href="/">
+        <img
+          class="logoImg"
+          src="https://stackblitz.com/files/web-platform-19jbmw/github/lazaroPedro/clin/main/sorrir-mais-logo.png"
+          alt="Logo"
+        />
+      </a>
+      <nav class="navHeader">
+        <ul>
+          <li><a href="/" title="este é " class="navItem active">Inicio</a></li>
+          <li><a href="#about-us" class="navItem">Quem Somos</a></li>
+          <li><a href="" class="navItem">Clinica</a></li>
+          <li><a href="" class="navItem">Tratamento</a></li>
+          <li><a href="" class="navItem">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="mainAgendamento">
+        <div class="ctaText">
+          <h1>Conquiste o sorriso dos seus sonhos!</h1>
+          <h2>
+            <strong> Agende já sua consulta</strong>, nossos profissionais estão
+            prontos para te atender <strong>agora mesmo</strong>
+          </h2>
+          <a class="ctaButton" href="">Agendar</a>
+        </div>
+        <img
+          class="ctaImg"
+          src="https://stackblitz.com/files/web-platform-19jbmw/github/lazaroPedro/clin/main/dentist-with-smile.jpg"
+          alt=""
+        />
+      </section>
+      <section class="service">
+        <h2>Conheça nossos serviços:</h2>
+        <dl>
+          <div class="serviceItem">
+            <img
+              src="https://stackblitz.com/files/web-platform-19jbmw/github/lazaroPedro/clin/main/wepik-photo-mode-2022722-21332.jpeg"
+              alt=""
+            />
+            <dt>Ortodontia</dt>
+            <dd>
+              Por meio do uso de aparelhos dentários, os pacientes de todas as
+              idades podem corrigir o posicionamento dos dentes e ossos faciais
+            </dd>
+          </div>
+          <div class="serviceItem">
+            <img
+              src="https://stackblitz.com/files/web-platform-19jbmw/github/lazaroPedro/clin/main/dentist-examining-female-patient-with-teeth-shades.jpg"
+              alt=""
+            />
+            <dt>Implantodontia</dt>
+            <dd>
+              O tratamento com implante é indicado para substituir dentes
+              faltantes na boca de forma muito eficiente
+            </dd>
+          </div>
+          <div class="serviceItem">
+            <img
+              src="https://stackblitz.com/files/web-platform-19jbmw/github/lazaroPedro/clin/main/female-patient-smiling-clinic.jpg"
+              alt=""
+            />
+            <dt>Dentística</dt>
 
-<body>
-  <header>
+            <dd>
+              Também conhecida como odontologia estética, a dentística é a área
+              responsável por proporcionar ao paciente um sorriso mais
+              harmonioso, com dentes brancos e alinhados.
+            </dd>
+          </div>
+          <div class="serviceItem">
+            <img
+              src="https://stackblitz.com/files/web-platform-19jbmw/github/lazaroPedro/clin/main/little-beautiful-girl-dentist-smiling.jpg"
+              alt=""
+            />
+            <dt>Odontopediatria</dt>
 
-    <a href="/">
-      <img class="logoImg" src="https://stackblitz.com/files/web-platform-19jbmw/github/lazaroPedro/clin/main/sorrir-mais-logo.png" alt="Logo" />
-    </a>
-    <nav class="navHeader">
-      <ul>
-        <li><a href="/" title="este é " class="navItem active">Inicio</a></li>
-        <li><a href="#about-us" class="navItem">Quem Somos</a></li>
-        <li><a href="" class="navItem">Clinica</a></li>
-        <li><a href="" class="navItem">Tratamento</a></li>
-        <li><a href="" class="navItem">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="home" class="mainAgendamento">
-      <div class="ctaText">
-        <h1>Conquiste o sorriso dos seus sonhos!</h1>
-        <h2><strong> Agende já sua consulta</strong>, nossos profissionais estão prontos para te atender
-          <strong>agora mesmo</strong></h2>
-        <a class="ctaButton" href="">Agendar</a>
-      </div>
-      <img class="ctaImg" src="https://stackblitz.com/files/web-platform-19jbmw/github/lazaroPedro/clin/main/dentist-with-smile.jpg" alt="">
-
-    </section>
-    <section class="service">
-      <h2>Conheca nossos serviços</h2>
-      <dl>
-        <div class="serviceItem">
-        <dt>Ortodontia</dt>
-        <img src="https://img.freepik.com/free-photo/dentist-examining-female-patient-teeth_107420-65309.jpg?w=740&t=st=1661217124~exp=1661217724~hmac=864da7a1fda29d03b49d3cb6db1aa382031e82d3620dc6a4df546e3cb527b088" alt="">
-        <dd>Por meio do uso de aparelhos dentários, os pacientes de todas as idades podem corrigir o posicionamento dos dentes e ossos faciais</dd></div>
-        <div class="serviceItem">
-        <dt>Implantodontia</dt>
-        <dd>O tratamento com implante é indicado para substituir dentes faltantes na boca de forma muito eficiente</dd></div>
-        <div class="serviceItem">
-        <dt>Dentística</dt>
-        <dd>Também conhecida como odontologia estética, a dentística é a área responsável por proporcionar ao paciente um sorriso mais harmonioso, com dentes brancos e alinhados.</dd></div>
-        <div class="serviceItem">
-        <dt>Odontopediatria</dt>
-        <dd>A periodontia é a área responsável pela prevenção e pelo tratamento de tecidos e estruturas de sustentação dos dentes, ou seja, a gengiva e o osso.</dd></div>
-        
-      </dl>
-      <!--  <h1>Diferenciais da nossa clínica</h1>
+            <dd>
+              As crianças também precisam de acompanhamento dentário. A odontopediatria garante que os primeiros dentes do seu filho permaneçam saudáveis e livres de cárie e outras doenças dentárias.
+            </dd>
+          </div>
+        </dl>
+        <!--  <h1>Diferenciais da nossa clínica</h1>
         
           <dl>
             <dt>Profissionais especializados</dt>
@@ -65,14 +107,9 @@
             <dt>Localização</dt>
 
           </dl>-->
-
-
-
-
-    </section>
-  </main>
-</body>
-
+      </section>
+    </main>
+  </body>
 </html>
 
 <!-- <a href="https://www.freepik.com/photos/oral">Oral photo created by Racool_studio - www.freepik.com</a> 
