@@ -3,7 +3,12 @@
 const activeClass = 'active';
 const list = document.querySelectorAll('li.navItem');
 
-addEventListener(click, document.i)*/
+addEventListener(click, document.i)*
+
+
+
+----------
+
 
 const list = document.querySelectorAll('.navItem')
 function activeLink(){
@@ -12,7 +17,15 @@ function activeLink(){
   this.classList.add('active')
 }
 list.forEach((item) =>
-item.addEventListener('mousemove', activeLink))/*
+item.addEventListener('mousemove', activeLink))
+
+
+------------
+
+
+
+
+/*
 
 $("#homeLink").click(function() {
   $('html, body').animate({

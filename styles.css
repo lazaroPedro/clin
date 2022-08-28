@@ -33,8 +33,9 @@ header {
 }
 
 .logoImg {
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  height: 14vh;
+  padding-top: 0.5vh;
+
 }
 
 .navHeader ul,
@@ -54,7 +55,7 @@ header {
   transition: 0.5s;
 }
 .navItem:hover:not(.active) {
-  background-color: #00afad20;
+  background-color: #00346120;
   box-shadow: 0 -5px 10px #00000050;
 }
 .active {
@@ -117,12 +118,12 @@ main {
   border-radius: 15px;
   font-size: 1.5rem;
 
-  background-color: var(--mainColor);
+  background-image: linear-gradient(45deg, var(--mainColor), var(--lightColor));
   text-decoration: none;
   color: #fff;
-  border: 2px solid var(--corBranca);
+  border: 3px solid #fff;
   font-weight: 800;
-  box-shadow: 0 0 5px var(--darkColor);
+  box-shadow: 0 0 5px #00000080;
   margin-top: 5vh;
 }
 
@@ -156,7 +157,7 @@ dl {
   border-radius: 10px;
   margin-bottom: 50px;
   box-shadow: 0 0 5px #00000050;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
   
 }
 .serviceItem dt{
